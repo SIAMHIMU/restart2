@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.carsor{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.514);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left .viddiv{
+    width: 90%;
+    height: 400px;
+}
+.left .viddiv video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.right h1{
+    font-size: 6vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    opacity: 0;
+}
+.right-text{
+    padding-top: 15vh;
+    margin-left: 2vw;
+}
+.overly{
+    width: fit-content;
+    overflow: hidden;
+}
+.overly h1{
+    transform: translateY(100%);
+}
+.right button{
+    color: #fff;
+    background-color: #111;
+    padding: 1vw 2vw;
+    margin-top: 5vh;
+    margin-left: 30%;
+}
+.page2{
+    width: 100%;
+    min-height: 130vh;
+    background-color: #111;
+}
+.boxes{
+    padding-top: 80px;
+}
+.box{
+    padding: 0 2vw;
+    width: 100%;
+    height: 20vh;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.box:nth-child(4){
+    border-bottom: 1px solid #fff;
+}
+.box h1{
+    font-size: 5vw;
+    text-transform: uppercase;
+}
+.box img{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+    mix-blend-mode: difference;
+}
